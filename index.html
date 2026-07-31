@@ -14,53 +14,6 @@
   a { color: oklch(45% 0.14 55); text-decoration: none; }
   a:hover { color: oklch(35% 0.14 55); }
   html { scroll-behavior: smooth; }
-
-  .blog-frame-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(30,20,10,0.72);
-    z-index: 999;
-    padding: 24px;
-    align-items: center;
-    justify-content: center;
-  }
-  .blog-frame-overlay:target {
-    display: flex;
-  }
-  .blog-frame-box {
-    background: #fff;
-    width: 100%;
-    max-width: 1000px;
-    height: 88vh;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 30px 70px -20px rgba(0,0,0,0.5);
-  }
-  .blog-frame-box iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  .blog-frame-close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    z-index: 2;
-    background: oklch(60% 0.15 75);
-    color: #fff;
-    padding: 9px 16px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 14px;
-  }
-  @media (max-width: 720px) {
-    .blog-frame-box { height: 92vh; border-radius: 14px; }
-    .blog-frame-overlay { padding: 10px; }
-  }
 </style>
 </head>
 <body>
@@ -181,7 +134,7 @@
 
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:32px;">
 
-        <a href="#frame-proceso" style="text-decoration:none; color:inherit; display:block;">
+        <a href="https://aldohtml.github.io/blog1/" style="text-decoration:none; color:inherit; display:block;">
         <article style="background:oklch(99% 0.01 90); border-radius:20px; overflow:hidden; box-shadow:0 12px 30px -14px oklch(30% 0.05 70 / 0.2); transition:transform .2s;">
           <img src="producto-kids-perezosos.jpg" alt="Proceso artesanal" style="width:100%; height:190px; object-fit:cover;">
           <div style="padding:22px;">
@@ -193,7 +146,7 @@
         </article>
         </a>
 
-        <a href="#frame-planeta" style="text-decoration:none; color:inherit; display:block;">
+        <a href="https://aldohtml.github.io/blog2/" style="text-decoration:none; color:inherit; display:block;">
         <article style="background:oklch(99% 0.01 90); border-radius:20px; overflow:hidden; box-shadow:0 12px 30px -14px oklch(30% 0.05 70 / 0.2);">
           <img src="producto-hoja-verde.jpg" alt="Beneficios ambientales" style="width:100%; height:190px; object-fit:cover;">
           <div style="padding:22px;">
@@ -205,7 +158,7 @@
         </article>
         </a>
 
-        <a href="#frame-usos" style="text-decoration:none; color:inherit; display:block;">
+        <a href="https://aldohtml.github.io/blog3/" style="text-decoration:none; color:inherit; display:block;">
         <article style="background:oklch(99% 0.01 90); border-radius:20px; overflow:hidden; box-shadow:0 12px 30px -14px oklch(30% 0.05 70 / 0.2);">
           <img src="hero-envoltorios.jpg" alt="Recetas y usos en cocina" style="width:100%; height:190px; object-fit:cover;">
           <div style="padding:22px;">
@@ -258,28 +211,6 @@
     </div>
     <p style="font-size:13px; opacity:0.7; margin:0;">Proyecto universitario sin fines de lucro · Hecho con algodón, cera de abeja y buenas intenciones 🐝</p>
   </footer>
-
-  <!-- OVERLAYS DE BLOG (se muestran dentro de la misma pagina) -->
-  <div class="blog-frame-overlay" id="frame-proceso">
-    <div class="blog-frame-box">
-      <a href="#_cerrar" class="blog-frame-close">Cerrar ✕</a>
-      <iframe src="https://aldohtml.github.io/blog1/" title="Así nace un envoltorio: de la tela a tu refri" loading="lazy"></iframe>
-    </div>
-  </div>
-
-  <div class="blog-frame-overlay" id="frame-planeta">
-    <div class="blog-frame-box">
-      <a href="#_cerrar" class="blog-frame-close">Cerrar ✕</a>
-      <iframe src="https://aldohtml.github.io/blog2/" title="Un envoltorio, mil bolsas menos" loading="lazy"></iframe>
-    </div>
-  </div>
-
-  <div class="blog-frame-overlay" id="frame-usos">
-    <div class="blog-frame-box">
-      <a href="#_cerrar" class="blog-frame-close">Cerrar ✕</a>
-      <iframe src="https://aldohtml.github.io/blog3/" title="5 usos que quizá no conocías" loading="lazy"></iframe>
-    </div>
-  </div>
 
 </div>
 
